@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">San Diego Tour Guide</string>
+
+    <string name="outdoors">Outdoors</string>
+    <string name="families">Families</string>
+    <string name="museums">Museums</string>
+    <string name="shopping">Shopping</string>
+    <string name="favorites">Favorites</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
