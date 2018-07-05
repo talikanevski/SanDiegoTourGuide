@@ -30,8 +30,16 @@ public class MuseumsFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("Maritime Museum", R.drawable.maritime_museum, R.drawable.favorites));
-        attractions.add(new Attraction("Uss Midway Museum", R.drawable.uss_midway_museum, R.drawable.favorites));
+        attractions.add(new Attraction("Maritime Museum", R.drawable.maritime_museum));
+        attractions.add(new Attraction("Niki de Saint Phalle's Queen Califia's Magical Circle", R.drawable.niki_de_saint));
+        attractions.add(new Attraction("Uss Midway Museum", R.drawable.uss_midway_museum));
+        attractions.add(new Attraction("San Diego Natural History Museum", R.drawable.natural_history_museum));
+        attractions.add(new Attraction("Mingei International Museum", R.drawable.mingei));
+        attractions.add(new Attraction("San Diego Air&Space Museum", R.drawable.air_and_space_museum_));
+        attractions.add(new Attraction("Spanish Village Art Center", R.drawable.art_village));
+        attractions.add(new Attraction("Mission Basilica San Diego de Alcalá", R.drawable.first_mission));
+
+
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

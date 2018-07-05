@@ -26,16 +26,14 @@ public class FragmentAdapter extends FragmentPagerAdapter {
             return new FamiliesFragment();
         } else if (position == 2) {
             return new MuseumsFragment();
-        } else if (position == 3) {
-            return new ShoppingFragment();
         } else {
-            return new FavoritesFragment();
+            return new ShoppingFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 5;
+        return 4;
     }
 
     @Override
@@ -46,10 +44,8 @@ public class FragmentAdapter extends FragmentPagerAdapter {
             return mContext.getString(R.string.families);
         } else if (position == 2) {
             return mContext.getString(R.string.museums);
-        } else if (position == 3) {
-            return mContext.getString(R.string.shopping);
         } else {
-            return mContext.getString(R.string.favorites);
+            return mContext.getString(R.string.shopping);
         }
     }
 }

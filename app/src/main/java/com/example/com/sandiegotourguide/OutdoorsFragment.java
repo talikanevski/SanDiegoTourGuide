@@ -30,9 +30,14 @@ public class OutdoorsFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("San Diego Zoo", R.drawable.zoo, R.drawable.favorites));
-        attractions.add(new Attraction("San Diego Zoo Safari Park", R.drawable.safari, R.drawable.favorites));
-        attractions.add(new Attraction("Torrey Pines State National Reserve", R.drawable.del_mar, R.drawable.favorites));
+        attractions.add(new Attraction("San Diego Zoo", R.drawable.zoo));
+        attractions.add(new Attraction("San Diego Zoo Safari Park", R.drawable.safari));
+        attractions.add(new Attraction("Torrey Pines State National Reserve", R.drawable.del_mar));
+        attractions.add(new Attraction("Balboa Park", R.drawable.balboa));
+        attractions.add(new Attraction("La Jolla Cove", R.drawable.la_holla_cove));
+        attractions.add(new Attraction("Old Town", R.drawable.old_town));
+        attractions.add(new Attraction("Seaport Vilage", R.drawable.saeport_vilage));
+
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

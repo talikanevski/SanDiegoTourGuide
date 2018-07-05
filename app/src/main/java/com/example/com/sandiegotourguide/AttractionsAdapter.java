@@ -60,36 +60,12 @@ public class AttractionsAdapter extends ArrayAdapter<Attraction> {
         s.setText(currentAttraction.getAttractionName());
 
         /** Find the ImageView in the list_item.xml layout with the ID list_item_icon**/
-        ImageView iconView = (ImageView) listItemView.findViewById(R.id.artist_icon);
+        ImageView iconView = (ImageView) listItemView.findViewById(R.id.icon);
 
         /**Get the image resource ID from the current Attraction object and
          // set the image to iconView**/
         iconView.setImageResource(currentAttraction.getImageResourceId());
 
-        /** Find the ImageView in the list_item.xml layout with the ID list_item_icon**/
-        final ImageView iconfavorites = (ImageView) listItemView.findViewById(R.id.favorites);
-
-        /** Get the image resource ID from the current Artist object and
-         // set the image to iconView**/
-        if (currentAttraction.getFavorites() == 1)
-            iconfavorites.setImageResource(R.drawable.favorites_red);
-        else
-            iconfavorites.setImageResource(R.drawable.favorites);
-
-        /** Set a click listener on that Image**/
-        iconfavorites.setOnClickListener(new View.OnClickListener() {
-            /** The code in this method will be executed when the ImageView is clicked on.**/
-            @Override
-            public void onClick(View view) {
-                if (currentAttraction.getFavorites() == 1) {
-                    currentAttraction.setFavorites(0);
-                    iconfavorites.setImageResource(R.drawable.favorites);
-                } else {
-                    currentAttraction.setFavorites(1);
-                    iconfavorites.setImageResource(R.drawable.favorites_red);
-                }
-            }
-        });
 
         /** Return the whole list item layout (containing 2 TextViews and an ImageView)
          // so that it can be shown in the ListView**/

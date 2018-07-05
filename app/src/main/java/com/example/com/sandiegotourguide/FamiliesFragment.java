@@ -33,9 +33,15 @@ public class FamiliesFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("San Diego Zoo", R.drawable.zoo, R.drawable.favorites));
-        attractions.add(new Attraction("San Diego Zoo Safari Park", R.drawable.safari, R.drawable.favorites));
-
+        attractions.add(new Attraction("SeaWorld San Diego", R.drawable.seaworld));
+        attractions.add(new Attraction("San Diego Zoo", R.drawable.zoo));
+        attractions.add(new Attraction("La Jolla Cove", R.drawable.la_holla_cove));
+        attractions.add(new Attraction("LegoLand San Diego", R.drawable.legoland));
+        attractions.add(new Attraction("Balboa Park", R.drawable.balboa2));
+        attractions.add(new Attraction("San Diego Zoo Safari Park", R.drawable.safari));
+        attractions.add(new Attraction("Uss Midway Museum", R.drawable.uss_midway_museum));
+        attractions.add(new Attraction("Birch Aquarium", R.drawable.birch_aquarium));
+        attractions.add(new Attraction("Coronado Island", R.drawable.coronado_island));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

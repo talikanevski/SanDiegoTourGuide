@@ -30,9 +30,12 @@ public class ShoppingFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("Old Town", R.drawable.old_town, R.drawable.favorites));
-        attractions.add(new Attraction("Gaslamp Quarter", R.drawable.gaslamp_quarter, R.drawable.favorites));
-
+        attractions.add(new Attraction("Old Town", R.drawable.old_town));
+        attractions.add(new Attraction("Gaslamp Quarter", R.drawable.gaslamp_quarter));
+        attractions.add(new Attraction("Fashion Valley", R.drawable.fashion_valley));
+        attractions.add(new Attraction("Hillcrest", R.drawable.hillcrest));
+        attractions.add(new Attraction("The Coronado Ferry Landing", R.drawable.sd));
+        attractions.add(new Attraction("Westfield Horton Plaza", R.drawable.westfield_horton_plaza));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
