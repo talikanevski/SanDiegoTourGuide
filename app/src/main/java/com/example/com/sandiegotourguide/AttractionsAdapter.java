@@ -51,8 +51,7 @@ public class AttractionsAdapter extends ArrayAdapter<Attraction> {
         /** Get the {@link Attraction} object located at this position in the list**/
         final Attraction currentAttraction = getItem(position);
 
-
-        /** Find the TextView in the listview_song.xml layout with the ID version_name**/
+        /** Find the TextView in the listview_list_item.xml layout with the ID version_name**/
         TextView s = (TextView) listItemView.findViewById(R.id.attraction);
 
         /** Get the version name from the current Attraction object and
@@ -66,6 +65,12 @@ public class AttractionsAdapter extends ArrayAdapter<Attraction> {
          // set the image to iconView**/
         iconView.setImageResource(currentAttraction.getImageResourceId());
 
+        /** Find the TextView in the listview_list_item.xml layout **/
+        TextView l = (TextView) listItemView.findViewById(R.id.location);
+
+        /** Get the location from the current Attraction object and
+         // set this text on the name TextView**/
+        l.setText(currentAttraction.getmLocation());
 
         /** Return the whole list item layout (containing 2 TextViews and an ImageView)
          // so that it can be shown in the ListView**/

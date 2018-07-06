@@ -3,13 +3,15 @@ package com.example.com.sandiegotourguide;
 
 /**
  * {@link Attraction} represents a single Android platform release.
- * Each object has 3 properties: name of a an attraction and image resource ID
+ * Each object has 3 properties: name of a an attraction, image resource ID and location
  */
 public class Attraction {
     //name af an attraction
     private String mName;
     // Drawable resource ID
     private int mImageResourceId;
+    //location
+    private String mLocation;
 
     /**
      * Create a new Attraction object.
@@ -17,9 +19,10 @@ public class Attraction {
      * @param name            is the name of the attraction (e.g. San Diego Zoo)
      * @param imageResourceId is drawable reference ID that corresponds to the Android version
      */
-    public Attraction(String name, int imageResourceId) {
+    public Attraction(String name, int imageResourceId, String location) {
         mName = name;
         mImageResourceId = imageResourceId;
+        mLocation = location;
     }
 
     /**
@@ -34,6 +37,11 @@ public class Attraction {
      */
     public int getImageResourceId() {
         return mImageResourceId;
+    }
+
+    /** Get the location */
+    public String getmLocation() {
+        return mLocation;
     }
 }
 

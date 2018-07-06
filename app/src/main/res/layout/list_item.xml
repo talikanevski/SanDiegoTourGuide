@@ -15,8 +15,7 @@
         android:adjustViewBounds="true"
         android:scaleType="centerCrop" />
 
-    <TextView
-        android:id="@+id/attraction"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="130dp"
         android:layout_alignParentBottom="true"
@@ -24,8 +23,21 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/icon"
         android:paddingLeft="16dp"
-        android:textSize="17sp"
-        android:textColor="@color/colorAccent"
-        android:textStyle="bold"/>
+        android:orientation="vertical"
+        >
 
+        <TextView
+            android:id="@+id/attraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="map"/>
+    </LinearLayout>
 </RelativeLayout>

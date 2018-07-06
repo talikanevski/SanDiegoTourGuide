@@ -30,14 +30,14 @@ public class MuseumsFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("Maritime Museum", R.drawable.maritime_museum));
-        attractions.add(new Attraction("Niki de Saint Phalle's Queen Califia's Magical Circle", R.drawable.niki_de_saint));
-        attractions.add(new Attraction("Uss Midway Museum", R.drawable.uss_midway_museum));
-        attractions.add(new Attraction("San Diego Natural History Museum", R.drawable.natural_history_museum));
-        attractions.add(new Attraction("Mingei International Museum", R.drawable.mingei));
-        attractions.add(new Attraction("San Diego Air&Space Museum", R.drawable.air_and_space_museum_));
-        attractions.add(new Attraction("Spanish Village Art Center", R.drawable.art_village));
-        attractions.add(new Attraction("Mission Basilica San Diego de Alcalá", R.drawable.first_mission));
+        attractions.add(new Attraction("Maritime Museum", R.drawable.maritime_museum, "1492 N Harbor Dr San Diego, CA 92101-3309"));
+        attractions.add(new Attraction("Niki de Saint Phalle's Queen Califia's Magical Circle", R.drawable.niki_de_saint, "3333 Bear Valley Pkwy, Escondido, CA 92025"));
+        attractions.add(new Attraction("Uss Midway Museum", R.drawable.uss_midway_museum, "910 N Harbor Drive San Diego, CA 92101-5811"));
+        attractions.add(new Attraction("San Diego Natural History Museum", R.drawable.natural_history_museum, "1788 El Prado, San Diego, CA 92101"));
+        attractions.add(new Attraction("Mingei International Museum", R.drawable.mingei, "Plaza de Panama, Balboa Park, 1439 El Prado, San Diego, CA 92101"));
+        attractions.add(new Attraction("San Diego Air&Space Museum", R.drawable.air_and_space_museum_, "2001 Pan American Plaza, San Diego, CA 92101"));
+        attractions.add(new Attraction("Spanish Village Art Center", R.drawable.art_village, "1770 Village Pl, San Diego, CA 92101"));
+        attractions.add(new Attraction("Mission Basilica San Diego de Alcalá", R.drawable.first_mission, "10818 San Diego Mission Rd, San Diego, CA 92108"));
 
 
 

@@ -30,13 +30,13 @@ public class OutdoorsFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("San Diego Zoo", R.drawable.zoo));
-        attractions.add(new Attraction("San Diego Zoo Safari Park", R.drawable.safari));
-        attractions.add(new Attraction("Torrey Pines State National Reserve", R.drawable.del_mar));
-        attractions.add(new Attraction("Balboa Park", R.drawable.balboa));
-        attractions.add(new Attraction("La Jolla Cove", R.drawable.la_holla_cove));
-        attractions.add(new Attraction("Old Town", R.drawable.old_town));
-        attractions.add(new Attraction("Seaport Vilage", R.drawable.saeport_vilage));
+        attractions.add(new Attraction("San Diego Zoo", R.drawable.zoo, "2929 Zoo Drive San Diego, CA 92101"));
+        attractions.add(new Attraction("San Diego Zoo Safari Park", R.drawable.safari, "15500 San Pasqual Valley Rd Escondido, CA 92027-7017"));
+        attractions.add(new Attraction("Torrey Pines State National Reserve", R.drawable.del_mar, "12600 N Torrey Pines Rd, La Jolla, CA 92037"));
+        attractions.add(new Attraction("Balboa Park", R.drawable.balboa,"1549 El Prado St, San Diego, CA 92101"));
+        attractions.add(new Attraction("La Jolla Cove", R.drawable.la_holla_cove, "1100 Coast Boulevard, La Jolla, CA 92037"));
+        attractions.add(new Attraction("Old Town", R.drawable.old_town, "4002 Wallace St San Diego, CA 92110"));
+        attractions.add(new Attraction("Seaport Vilage", R.drawable.saeport_vilage, "863 W Harbor Dr b, San Diego, CA 92101"));
 
 
 

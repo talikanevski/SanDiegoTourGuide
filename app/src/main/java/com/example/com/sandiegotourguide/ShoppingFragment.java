@@ -30,12 +30,13 @@ public class ShoppingFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("Old Town", R.drawable.old_town));
-        attractions.add(new Attraction("Gaslamp Quarter", R.drawable.gaslamp_quarter));
-        attractions.add(new Attraction("Fashion Valley", R.drawable.fashion_valley));
-        attractions.add(new Attraction("Hillcrest", R.drawable.hillcrest));
-        attractions.add(new Attraction("The Coronado Ferry Landing", R.drawable.sd));
-        attractions.add(new Attraction("Westfield Horton Plaza", R.drawable.westfield_horton_plaza));
+        attractions.add(new Attraction("Old Town", R.drawable.old_town, "4002 Wallace St San Diego, CA 92110"));
+        attractions.add(new Attraction("Gaslamp Quarter", R.drawable.gaslamp_quarter, "Gaslamp Quarter, San Diego, CA"));
+        attractions.add(new Attraction("Fashion Valley", R.drawable.fashion_valley, "7007 Friars Rd San Diego, CA 92108-1148"));
+        attractions.add(new Attraction("Hillcrest", R.drawable.hillcrest, "Hillcrest, San Diego, CA"));
+        attractions.add(new Attraction("The Coronado Ferry Landing", R.drawable.sd, "1201 1st St Coronado, CA 92118-1462"));
+        attractions.add(new Attraction("Westfield Horton Plaza", R.drawable.westfield_horton_plaza, "324 Horton Plz\n" +
+                "San Diego, CA 92101-6148"));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
