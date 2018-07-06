@@ -20,7 +20,7 @@
             android:layout_alignParentTop="true"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:text="San Diego"
+            android:text="@string/san_diego"
             android:fontFamily="cursive"
             android:textSize="30sp"
             android:textColor="@color/colorPrimary"/>
