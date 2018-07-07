@@ -76,6 +76,5 @@ public class AttractionsAdapter extends ArrayAdapter<Attraction> {
          // so that it can be shown in the ListView**/
         return listItemView;
     }
-
 }
 

@@ -37,8 +37,56 @@
         <item name="android:paddingLeft">16dp</item>
         <item name="android:paddingTop">16dp</item>
         <item name="android:fontFamily">cursive</item>
-
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="widthHeight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="rl1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">130dp</item>
+        <item name="android:background">#B2EBF2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeight</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">16dp</item>
     </style>
 
+    <style name="rl2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">130dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_toRightOf">@+id/icon</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Style for a list_item.xml -->
+    <style name="icon">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">130dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="attraction">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="location">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColorLink">@color/colorAccent</item>
+        <item name="android:textSize">17sp</item>
+    </style>
 
 </resources>

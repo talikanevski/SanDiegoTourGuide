@@ -19,29 +19,26 @@ import java.util.ArrayList;
  */
 public class FamiliesFragment extends Fragment {
 
-
     public FamiliesFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.attractions_list, container, false);
 
-
-        // Create a list of words
+        // Create a list of attractions
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("SeaWorld San Diego", R.drawable.seaworld, "500 Sea World Drive, San Diego, CA 92109"));
-        attractions.add(new Attraction("San Diego Zoo", R.drawable.zoo, "2929 Zoo Drive San Diego, CA 92101"));
-        attractions.add(new Attraction("La Jolla Cove", R.drawable.la_holla_cove, "1100 Coast Boulevard, La Jolla, CA 92037"));
-        attractions.add(new Attraction("LegoLand San Diego", R.drawable.legoland, "1 Legoland Drive Carlsbad, CA 92008-4610"));
-        attractions.add(new Attraction("Balboa Park", R.drawable.balboa,"1549 El Prado St, San Diego, CA 92101"));
-        attractions.add(new Attraction("San Diego Zoo Safari Park", R.drawable.safari, "15500 San Pasqual Valley Rd Escondido, CA 92027-7017"));
-        attractions.add(new Attraction("Uss Midway Museum", R.drawable.uss_midway_museum, "910 N Harbor Drive San Diego, CA 92101-5811"));
-        attractions.add(new Attraction("Birch Aquarium", R.drawable.birch_aquarium, "2300 Expedition Way, La Jolla, CA 92037"));
-        attractions.add(new Attraction("Coronado Island", R.drawable.coronado_island, "2000 Mullinex Drive, Coronado, CA 92118"));
+        attractions.add(new Attraction(getString(R.string.seaworld), R.drawable.seaworld, getString(R.string.seaworld_location)));
+        attractions.add(new Attraction(getString(R.string.zoo), R.drawable.zoo, getString(R.string.zoo_location)));
+        attractions.add(new Attraction(getString(R.string.la_jolla), R.drawable.la_holla_cove, getString(R.string.la_jolla_location)));
+        attractions.add(new Attraction(getString(R.string.lego), R.drawable.legoland, getString(R.string.lego_location)));
+        attractions.add(new Attraction(getString(R.string.balboa), R.drawable.balboa,getString(R.string.balboa_location)));
+        attractions.add(new Attraction(getString(R.string.safari), R.drawable.safari, getString(R.string.safari_location)));
+        attractions.add(new Attraction(getString(R.string.midway), R.drawable.uss_midway_museum, getString(R.string.midway_location)));
+        attractions.add(new Attraction(getString(R.string.birch), R.drawable.birch_aquarium, getString(R.string.birch_location)));
+        attractions.add(new Attraction(getString(R.string.coronado), R.drawable.coronado_island, getString(R.string.coronado_location)));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

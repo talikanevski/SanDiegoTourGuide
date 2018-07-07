@@ -24,7 +24,6 @@ public class Attraction {
         mImageResourceId = imageResourceId;
         mLocation = location;
     }
-
     /**
      * Get the name of the attraction
      */

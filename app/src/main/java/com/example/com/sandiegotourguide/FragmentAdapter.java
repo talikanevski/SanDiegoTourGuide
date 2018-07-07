@@ -15,7 +15,6 @@ public class FragmentAdapter extends FragmentPagerAdapter {
     public FragmentAdapter(Context context, FragmentManager supportFragmentManager) {
         super(supportFragmentManager);
         mContext = context;
-
     }
 
     @Override
