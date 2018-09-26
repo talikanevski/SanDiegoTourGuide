@@ -14,7 +14,7 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class OutdoorsFragment extends Fragment {
+public class    OutdoorsFragment extends Fragment {
 
 
     public OutdoorsFragment() {
