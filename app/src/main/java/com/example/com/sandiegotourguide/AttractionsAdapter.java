@@ -1,6 +1,7 @@
 package com.example.com.sandiegotourguide;
 
 import android.app.Activity;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +15,7 @@ import java.util.ArrayList;
  * {@link AttractionsAdapter} is an {@link ArrayAdapter} that can provide the layout for each list
  * based on a data source, which is a list of {@link Attraction} objects.
  */
-public class AttractionsAdapter extends ArrayAdapter<Attraction> {
-
-    private static final String LOG_TAG = AttractionsAdapter.class.getSimpleName();
+class AttractionsAdapter extends ArrayAdapter<Attraction> {
 
     /**
      * param context        The current context. Used to inflate the layout file.
@@ -37,10 +36,11 @@ public class AttractionsAdapter extends ArrayAdapter<Attraction> {
      * @param parent      The parent ViewGroup that is used for inflation.
      * @return The View for the position in the AdapterView.
      */
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
 
-        /** Check if the existing view is being reused, otherwise inflate the view**/
+        /* Check if the existing view is being reused, otherwise inflate the view**/
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
@@ -48,31 +48,32 @@ public class AttractionsAdapter extends ArrayAdapter<Attraction> {
         }
 
 
-        /** Get the {@link Attraction} object located at this position in the list**/
+        /* Get the {@link Attraction} object located at this position in the list**/
         final Attraction currentAttraction = getItem(position);
 
-        /** Find the TextView in the listview_list_item.xml layout with the ID version_name**/
-        TextView s = (TextView) listItemView.findViewById(R.id.attraction);
+        /* Find the TextView in the listview_list_item.xml layout with the ID version_name**/
+        TextView s = listItemView.findViewById(R.id.attraction);
 
-        /** Get the version name from the current Attraction object and
+        /* Get the version name from the current Attraction object and
          // set this text on the name TextView**/
+        assert currentAttraction != null;
         s.setText(currentAttraction.getAttractionName());
 
-        /** Find the ImageView in the list_item.xml layout with the ID list_item_icon**/
-        ImageView iconView = (ImageView) listItemView.findViewById(R.id.icon);
+        /* Find the ImageView in the list_item.xml layout with the ID list_item_icon**/
+        ImageView iconView = listItemView.findViewById(R.id.icon);
 
-        /**Get the image resource ID from the current Attraction object and
+        /*Get the image resource ID from the current Attraction object and
          // set the image to iconView**/
         iconView.setImageResource(currentAttraction.getImageResourceId());
 
-        /** Find the TextView in the listview_list_item.xml layout **/
+        /* Find the TextView in the listview_list_item.xml layout **/
         TextView l = (TextView) listItemView.findViewById(R.id.location);
 
-        /** Get the location from the current Attraction object and
+        /* Get the location from the current Attraction object and
          // set this text on the name TextView**/
         l.setText(currentAttraction.getmLocation());
 
-        /** Return the whole list item layout (containing 2 TextViews and an ImageView)
+        /* Return the whole list item layout (containing 2 TextViews and an ImageView)
          // so that it can be shown in the ListView**/
         return listItemView;
     }

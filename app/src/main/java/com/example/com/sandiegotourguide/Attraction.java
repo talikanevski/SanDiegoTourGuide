@@ -5,13 +5,13 @@ package com.example.com.sandiegotourguide;
  * {@link Attraction} represents a single Android platform release.
  * Each object has 3 properties: name of a an attraction, image resource ID and location
  */
-public class Attraction {
+class Attraction {
     //name af an attraction
-    private String mName;
+    private final String mName;
     // Drawable resource ID
-    private int mImageResourceId;
+    private final int mImageResourceId;
     //location
-    private String mLocation;
+    private final String mLocation;
 
     /**
      * Create a new Attraction object.

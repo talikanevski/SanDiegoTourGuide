@@ -5,12 +5,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-public class FragmentAdapter extends FragmentPagerAdapter {
+class FragmentAdapter extends FragmentPagerAdapter {
 
     /**
      * Context of the app
      */
-    private Context mContext;
+    private final Context mContext;
 
     public FragmentAdapter(Context context, FragmentManager supportFragmentManager) {
         super(supportFragmentManager);
